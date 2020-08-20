@@ -25,7 +25,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                         "alterId": 64
                     }
                 ],
-                "disableInsecureEncryption": true
+                "disableInsecureEncryption": false
             },
             "streamSettings": {
                 "network": "ws"
@@ -34,7 +34,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
     ],
     "outbounds": [
         {
-            "protocol": "freedom"
+            "protocol": "websocket"
         }
     ]
 }
